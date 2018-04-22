@@ -1,0 +1,1 @@
+At this point, the player character is finally fully modeled, so I have begun painting him in ZBrush. While I generally prefer using Photoshop and the UV system in Maya for most models, since this was an organic model rather than a hard surface model, using the polypaint functionality in ZBrush was my best bet.

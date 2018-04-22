@@ -1,0 +1,1 @@
+I have begun to implement some of the textures for the larger items. Here are what my armchair and TV look like textured.
