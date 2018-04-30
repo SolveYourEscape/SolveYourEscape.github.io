@@ -11,7 +11,7 @@ html
 
 body
 { font: normal .80em 'trebuchet ms', arial, sans-serif;
-    background: #FFF;
+    background: #1a1a1d;
     color: #555;}
 
 p
@@ -23,7 +23,7 @@ img
 
 h1
 {
-    color: #E7746F;
+    color: #A5334C;
     letter-spacing: 0;
     font: normal 300% 'Autour One';
     margin: 0 0 5px 0;
@@ -32,7 +32,7 @@ h1
 
 h2
 {
-    color: #E7746F;
+    color: #950740;
     letter-spacing: 0;
     font: normal 170% 'century gothic', arial;
     margin: 0 0 15px 0;
@@ -42,7 +42,7 @@ h2
 
 h3
 {
-    color: #7C2B2A;
+    color: #c3073f;
     letter-spacing: 0;
     font: normal 170% 'Autour One';
     margin: 0 0 5px 0;
@@ -51,7 +51,7 @@ h3
 
 h4
 {
-    color: #527A4E;
+    color: #CECECE;
     letter-spacing: 0;
     font: normal 150% 'Gloria Hallelujah';
     margin: 0 0 5px 0;
@@ -60,7 +60,7 @@ h4
 
 h5
 {
-    color: #009FBC;
+    color: #A9A9AD;
     letter-spacing: 0;
     font: normal 100% 'Autour One';
     margin: 0 0 5px 0;
@@ -134,6 +134,67 @@ ol li
     -ms-transform: translate(-50%, -50%);
     text-align: justify;
 }
+
+.btn {
+    background-color: #950740;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: normal 100% 'Autour One';
+    font-size: 16px;
+}
+
+.btn:active {
+    background-color: #c3073f;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: normal 100% 'Autour One';
+    font-size: 16px;
+}
+
+/* For art portfolio stuffs */
+.row {
+    margin: 0;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+    padding: 0 4px 0 0;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 30%;
+    display: none; /* Hide columns by default */
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: #29292D;
+    padding: 8px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+    display: block;
+}
+
 /* -----------------------
 Layout styles
 ------------------------*/
@@ -172,76 +233,6 @@ Layout styles
     margin-left: auto;
     margin-right: auto;
 }
-
-/* -----------------------
-Image Slider
-------------------------*/
-
-.slider-holder
-{
-    width: 800px;
-    height: 400px;
-    border: 5px solid #E7746F;
-    background-color: yellow;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    text-align: center;
-    overflow: hidden;
-}
-
-.image-holder
-{
-    width: 2400px;
-    background-color: red;
-    height: 400px;
-    clear: both;
-    position: relative;
-
-    -webkit-transition: left 2s;
-    -moz-transition: left 2s;
-    -o-transition: left 2s;
-    transition: left 2s;
-}
-
-.slider-image
-{
-    float: left;
-    margin: 0;
-    padding: 0;
-    position: relative;
-}
-
-#slider-image-1:target ~ .image-holder
-{
-    left: 0;
-}
-
-#slider-image-2:target ~ .image-holder
-{
-    left: -800px;
-}
-
-#slider-image-3:target ~ .image-holder
-{
-    left: -1600px;
-}
-
-.button-holder
-{
-    position: relative;
-    top: -20px;
-}
-
-.slider-change
-{
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    border-radius: 5px;
-    background-color: brown;
-}
-
 /* -----------------------
 Specific styles
 ------------------------*/
@@ -252,7 +243,7 @@ Specific styles
 
 #header
 { background: #1d1d1d url(header.jpg) repeat;
-    border-bottom: 2px solid #E7746F;
+    border-bottom: 2px solid #A5334C;
     height: 177px;}
 
 #banner
@@ -260,7 +251,7 @@ Specific styles
     width: 1000px;
     height: 500px;
     margin-bottom: 20px;
-    border: 5px solid #E7746F;}
+    border: 5px solid #A5334C;}
 
 #logo
 { width: 880px;
@@ -286,7 +277,7 @@ Specific styles
     text-decoration: none;}
 
 #logo_text h1 a .logo_colour
-{ color: #E7746F;}
+{ color: #A5334C;}
 
 #logo_text a:hover .logo_colour
 { color: #FFF;}
@@ -328,15 +319,15 @@ ul#menu li.selected a
 
 ul#menu li.selected
 { margin: 1px 2px 0 0;
-    background: #E7746F;}
+    background: #A5334C;}
 
 ul#menu li.selected a, ul#menu li.selected a:hover
-{ background: #E7746F;
+{ background: #A5334C;
     color: #FFF;}
 
 ul#menu li a:hover
 { color: #FFF;
-    background: #E7746F;}
+    background: #c3073f;}
 
 #site_content
 { width: 1020px;
@@ -369,7 +360,7 @@ ul#menu li a:hover
     padding: 28px 0 5px 0;
     text-align: center;
     background: transparent url(footer.jpg) repeat;
-    border-top: 2px solid #E7746F;
+    border-top: 2px solid #c3073f;
     color: #FFF;}
 
 #footer p
@@ -377,7 +368,7 @@ ul#menu li a:hover
     padding: 0 0 10px 0;}
 
 #footer a
-{ color: #E7746F;
+{ color: #c3073f;
     text-decoration: none;}
 
 #footer a:hover
